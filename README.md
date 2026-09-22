@@ -13,7 +13,7 @@ M.Sc. Electrical Engineering & Information Technology student at **Otto von Guer
 
 | Engineering evidence | Verified result |
 |---|---|
-| **ROS 2 manipulation** | 6 C++17 executables integrating state monitoring, joint/Cartesian planning, obstacle avoidance, mission sequencing and controlled pose-fault injection |
+| **ROS 2 manipulation** |  C++17 executables integrating state monitoring, joint/Cartesian planning, obstacle avoidance, mission sequencing and controlled pose-fault injection |
 | **Electric-drive V&V** | Nominal, payload, external-load and viscous-resistance checks passed analytical cross-validation with zero error at reported precision |
 | **Model-based control** | P, PI, filtered PID and LQR compared with actuator constraints and MATLAB↔Simulink validation |
 | **Industrial problem solving** | Brake-joint poka-yoke reduced offline RPT from 15 vehicles to 1–3; PLC logic supported 6+ AGV stations |
