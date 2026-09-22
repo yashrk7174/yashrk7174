@@ -7,7 +7,7 @@
   <a href="https://github.com/yashrk7174?tab=repositories"><img src="https://img.shields.io/badge/Explore-Engineering%20Projects-1F6FEB?style=for-the-badge&logo=github&logoColor=white" alt="Engineering projects"></a>
 </p>
 
-## Engineering in 15 seconds
+## Engineering Profile
 
 M.Sc. Electrical Engineering & Information Technology student at **Otto von Guericke University Magdeburg**, building control and autonomous systems through reproducible models, C++ robotics software and verification-first testing.
 
