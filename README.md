@@ -9,21 +9,21 @@
 
 ## Engineering Profile
 
-M.Sc. Electrical Engineering & Information Technology student at **Otto von Guericke University Magdeburg**, building control and autonomous systems through reproducible models, C++ robotics software and verification-first testing.
+M.Sc. Electrical Engineering & Information Technology student at **Otto von Guericke University Magdeburg**, building control and autonomous systems through physics-based modelling, C++ robotics software and verification-first engineering.
 
 | Engineering evidence | Verified result |
 |---|---|
-| **ROS 2 manipulation** |  C++17 executables integrating state monitoring, joint/Cartesian planning, obstacle avoidance, mission sequencing and controlled pose-fault injection |
-| **Electric-drive V&V** | Nominal, payload, external-load and viscous-resistance checks passed analytical cross-validation with zero error at reported precision |
-| **Model-based control** | P, PI, filtered PID and LQR compared with actuator constraints and MATLAB↔Simulink validation |
+| **ROS 2 manipulation** | C++17 executables integrating state monitoring, joint/Cartesian planning, obstacle avoidance, mission sequencing and controlled pose-fault injection |
+| **Electric-drive control & V&V** | PMSM–AGV integration, dq current control and cascaded motor-speed/current control verified through automated analytical cross-validation |
+| **Control-system design** | Current-loop and outer speed-loop PI controllers designed from explicit bandwidth, tracking and settling requirements |
 | **Industrial problem solving** | Brake-joint poka-yoke reduced offline RPT from 15 vehicles to 1–3; PLC logic supported 6+ AGV stations |
 
 ## Selected work
 
 | ROS 2 Resilient Manipulation | Electric Drive Control & V&V |
 |:---:|:---:|
-| [<img src="https://raw.githubusercontent.com/yashrk7174/ROS2-Resilient-Manipulation-Testbed/main/docs/evidence/manipulation_mission_execution.png" alt="Panda manipulation mission" width="470">](https://github.com/yashrk7174/ROS2-Resilient-Manipulation-Testbed) | [<img src="https://raw.githubusercontent.com/yashrk7174/AGV-Electric-Drive-Control-VNV/main/results/mechanical/AGV_Mech_Simulink_Model.png" alt="AGV Simulink mechanical plant" width="470">](https://github.com/yashrk7174/AGV-Electric-Drive-Control-VNV) |
-| **ROS 2 · MoveIt 2 · C++17**<br>Collision-aware Panda mission with stale-pose fault detection and reproducible launch workflows. | **MATLAB · Simulink · Verification**<br>Parameterized AGV plant with automated scenario testing, plots, datasets and verification reports. |
+| [<img src="https://raw.githubusercontent.com/yashrk7174/ROS2-Resilient-Manipulation-Testbed/main/docs/evidence/manipulation_mission_execution.png" alt="Panda manipulation mission" width="470">](https://github.com/yashrk7174/ROS2-Resilient-Manipulation-Testbed) | [<img src="https://raw.githubusercontent.com/yashrk7174/AGV-Electric-Drive-Control-VNV/main/results/control/electric_drive_cascaded_control_verified_model.png" alt="Verified cascaded PMSM current and speed control model" width="470">](https://github.com/yashrk7174/AGV-Electric-Drive-Control-VNV) |
+| **ROS 2 · MoveIt 2 · C++17**<br>Collision-aware Panda mission with stale-pose fault detection and reproducible launch workflows. | **MATLAB · Simulink · Simscape · Control · V&V**<br>PMSM–AGV electric drive with verified dq current regulation and cascaded motor-speed control. |
 
 ### [Automotive Cruise Control — Model-Based Control](https://github.com/yashrk7174/Automotive-Cruise-Control-Model-Based-Control)
 
@@ -49,6 +49,7 @@ M.Sc. Electrical Engineering & Information Technology student at **Otto von Guer
   <img src="https://img.shields.io/badge/C%2B%2B-17-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++17">
   <img src="https://img.shields.io/badge/Python-Engineering-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/MATLAB-Simulink-EF6C00?style=flat-square" alt="MATLAB and Simulink">
+  <img src="https://img.shields.io/badge/Simscape-Physical%20Modeling-0076A8?style=flat-square" alt="Simscape">
   <img src="https://img.shields.io/badge/Linux-Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white" alt="Ubuntu">
   <img src="https://img.shields.io/badge/CMake-Build-064F8C?style=flat-square&logo=cmake&logoColor=white" alt="CMake">
   <img src="https://img.shields.io/badge/Git-Version%20Control-F05032?style=flat-square&logo=git&logoColor=white" alt="Git">
@@ -59,12 +60,12 @@ M.Sc. Electrical Engineering & Information Technology student at **Otto von Guer
 
 <br>
 
-1. Define the operating assumptions and acceptance criteria.
-2. Derive reference behaviour from physics or system requirements.
+1. Define operating assumptions, interfaces and acceptance criteria.
+2. Derive independent reference behaviour from physics or system requirements.
 3. Implement the model, controller or planner reproducibly.
 4. Exercise nominal, disturbed and failure scenarios.
-5. Compare observed behaviour with defined references.
-6. Publish traceable code, plots, datasets and verification evidence.
+5. Quantitatively compare observed behaviour against defined references.
+6. Record PASS/FAIL results and publish traceable engineering evidence.
 
 </details>
 
@@ -73,10 +74,17 @@ M.Sc. Electrical Engineering & Information Technology student at **Otto von Guer
 
 <br>
 
+**Robust Autonomy**
 - Bounded recovery under perception and execution faults.
 - EKF/UKF-based pose estimation and uncertainty monitoring.
-- Closed-loop AGV velocity control followed by PMSM FOC and power-electronics modelling.
-- MIL/SIL regression workflows for repeatable virtual verification.
+
+**Electric Drive**
+- Full Clarke/Park and inverse transformation chain.
+- PMSM field-oriented control architecture.
+- Inverter and PWM/SVPWM modelling.
+- Sensor nonidealities and signal-processing effects.
+- C/C++ controller implementation.
+- MIL/SIL regression and automated virtual verification.
 
 </details>
 
